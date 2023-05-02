@@ -17,7 +17,7 @@ public class dbase {
             co1 = DriverManager.getConnection("jdbc:sqlite:c:\\Users\\Admin\\Desktop\\Nir\\NIR\\NIR\\lib\\pipes1.db");
             PreparedStatement preparedStatement = co.prepareStatement("select * from pipes");
             ResultSet result = preparedStatement.executeQuery();
-            PreparedStatement preparedStatementU = coU.prepareStatement("select * from pipes");
+            PreparedStatement preparedStatementU = coU.prepareStatement("select * from pipesU");
             ResultSet resultU = preparedStatementU.executeQuery();
             PreparedStatement pstmt = co1.prepareStatement("INSERT INTO pipes1 (id, pipes_length, pipes_diameter, pipes_wall_thickness) VALUES (?, ?, ?, ?)");
             ResultSetMetaData rsmd = result.getMetaData();
