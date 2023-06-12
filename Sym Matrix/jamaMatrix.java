@@ -21,8 +21,7 @@ public class jamaMatrix {
 
             matrixSum.print(4, 1); // вывод матрицы в консоль для проверки
 
-            jamaMatrix obj = new jamaMatrix();
-            obj.matrixToFile(matrixSum);
+            jamaMatrix.matrixToFile(matrixSum);
 
         } catch (IOException e) {
             e.printStackTrace();
