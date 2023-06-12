@@ -6,12 +6,8 @@ import java.io.IOException;
 
 public class jamaMatrixSistem {
     public static void main(String[] args) {
-
-        String fileNameA= "A.txt";
-        String fileNameB= "B.txt";
-        String fileNameX= "X.txt";
         
-        jamaMatrixSistem.solveSistem(fileNameA, fileNameB, fileNameX);
+        jamaMatrixSistem.solveSistem("A.txt", "B.txt", "X.txt");
     }
 
     public static void solveSistem(String fileNameA, String fileNameB, String fileNameX){ 
